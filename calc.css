@@ -1,0 +1,53 @@
+body { 
+    font-family: Arial, sans-serif; /* Font family for the entire document */
+    background-color: #000000; /* Background color of the body */
+    color: #333; /* Default text color */
+    text-align: center; /* Center align text */
+}
+
+.calculator {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center align items horizontally */
+    width: 300px; /* Fixed width for the calculator */
+    height: auto; /* Height will adjust based on content */
+    background-color: #f0f0f0; /* Background color of the calculator */ 
+    border-radius: 10px; /* Rounded corners for the calculator */
+    padding: 20px; /* Padding inside the calculator */
+    margin: 50px auto; /* Center the calculator on the page */
+}
+
+#display {
+    width: 100%; /* Full width for the display */
+    background-color: #ffffff; /* Background color of the display */
+    color: #000000; /* Text color of the display */
+    font-size: 24px; /* Font size for the display text */
+    border: none; /* No border for the display */
+    border-radius: 5px; /* Rounded corners for the display */
+    padding: 10px; /* Padding inside the display */
+    margin-bottom: 20px; /* Margin below the display */
+    text-align: center; /* Center align text in the display */
+} 
+
+.buttons {
+    display: grid; /* Use grid layout for buttons */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-gap: 10px; /* Space between buttons */
+    width: 100%; /* Full width for the buttons container */
+}
+
+.btn {
+    background-color: #52cdd1; /* Background color of the buttons */
+    color: rgb(0, 0, 0); /* Text color of the buttons */
+    padding: 15px; /* Padding inside the buttons */
+    font-size: 18px; /* Font size for the button text */
+    border: none; /* No border for the buttons */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    transition: transform 0.2s ease; /* Smooth transition for transform property */
+}
+
+.btn:hover {
+    background-color: #3a9ea0; /* Darker background color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.07); /* Slightly enlarge the button on hover */
+}

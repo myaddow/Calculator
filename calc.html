@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <title>Calculator</title> <!-- Title of the calculator page -->
+    <link rel="stylesheet" href="calc.css"> <!-- Link to the CSS file for styling the calculator -->
+    <script src="calc.js" defer></script> <!-- Link to the CSS and JavaScript files for styling and functionality -->
+</head>
+<body>
+    <div class="calculator"> <!-- Main container for the calculator -->
+        <input type="text" id="display" disabled> <!-- Input field to display the current calculation -->
+        <div class="buttons"> <!-- Container for calculator buttons -->
+            <button class="btn" onclick="clearDisplay()">C</button> <!-- Clear button to reset the display -->
+            <button class="btn" onclick="appendToDisplay('7')">7</button> <!-- Button to append '7' to the display -->
+            <button class="btn" onclick="appendToDisplay('8')">8</button> <!-- Button to append '8' to the display -->
+            <button class="btn" onclick="appendToDisplay('9')">9</button> <!-- Button to append '9' to the display -->
+            <button class="btn operator" onclick="appendToDisplay('/')">/</button> <!-- Button to append '/' to the display -->
+            <button class="btn" onclick="appendToDisplay('4')">4</button> <!-- Button to append '4' to the display -->
+            <button class="btn" onclick="appendToDisplay('5')">5</button> <!-- Button to append '5' to the display -->
+            <button class="btn" onclick="appendToDisplay('6')">6</button> <!-- Button to append '6' to the display -->
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button> <!-- Button to append '*' to the display -->
+            <button class="btn" onclick="appendToDisplay('1')">1</button> <!-- Button to append '1' to the display -->
+            <button class="btn" onclick="appendToDisplay('2')">2</button> <!-- Button to append '2' to the display -->
+            <button class="btn" onclick="appendToDisplay('3')">3</button> <!-- Button to append '3' to the display -->
+            <button class="btn operator" onclick="appendToDisplay('-')">-</button> <!-- Button to append '-' to the display -->
+            <button class="btn" onclick="appendToDisplay('0')">0</button> <!-- Button to append '0' to the display -->
+            <button class="btn operator" onclick="calculateResult()">=</button> <!-- Button to calculate the result of the expression in the display -->
+            <button class="btn operator" onclick="appendToDisplay('+')">+</button> <!-- Button to append '+' to the display -->
+        </div>
+    </div>
+</body>
+</html>
